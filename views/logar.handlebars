@@ -1,0 +1,11 @@
+<h1>Página para login</h1>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}}
+<form action="/users/enter" method="POST"> 
+<p>nome:</p>
+<input type="text" name="nome">
+<p>senha</p>
+<input type="text" name="senha"> 
+<button type="submit"> entrar </button>
+</form>

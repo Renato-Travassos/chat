@@ -1,0 +1,25 @@
+<div>
+{{#if user}}
+  <h1>{{user.nome}}</h1>
+  <a href="/users/getoff">sair</a>
+{{else}}
+  <a href="/users/sign">Cadastrar</a>
+  <a href="/users/login">Logar</a>
+{{/if}}
+
+</div>
+<h1>Lista de posts</h1>
+{{#if msg}}
+    <p>{{msg}}</p>
+{{/if}}
+{{#each rows}}
+  <div>
+  <img src={{perfil_img}} alt="perfil_mg"/>
+    <h1>{{id}}</h1>
+    <h1>{{nome}}</h1>
+    <p>{{biografia}}</p>
+    <a href="users/remover/{{id}}"><button>remover</button></a>
+    <a href="users/selecionar/{{id}}"><button>editar</button></a>
+    <a href="users/msg/{{id}}"><button>enviar msg</button></a>
+  </div>
+{{/each}}

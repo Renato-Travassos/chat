@@ -1,0 +1,15 @@
+<h1>Página de chat</h1>
+<div>
+{{#each t}}
+  <div>
+  <h1>{{msg_user}}</h1>
+  </div>
+{{/each}} 
+
+<form action="/msg/{{id}}" method="POST">
+
+<h2>
+<input type="text" name="msg" ></h2>
+<button type="submit"> enviar </button>
+</form>
+</div>

@@ -1,0 +1,16 @@
+
+<form action="/users/editar" method="POST"> 
+ 
+  <p>nome</p>
+<input type="hidden" value="{{obj.id}}" name="id" readonly >
+
+  <input type="text" value="{{obj.nome}}" name="nome"> 
+   <input type="hidden" value="{{obj.senha}}" name="senha" readonly> 
+
+  <p>biografia</p>
+  <textarea type="text"  value="{{obj.biografia}}" name="biografia">{{obj.biografia}} </textarea>
+
+  <button type="submit" value="editar">confirmar</button> 
+  <a href="/users">cancelar</a>
+   
+</form>
